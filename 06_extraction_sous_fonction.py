@@ -1,12 +1,15 @@
 # Exercice: découper la fonction servir_le_thé() en trois
 from cuisine import *
 
-
-def servir_le_thé():
-    # Faire bouillir l'eau
+def faire_bouillir_l_eau():
     allumer_bouilloire()
     attendre_que_ca_bout()
     eteindre_bouilloire()
+
+
+def servir_le_thé():
+    faire_bouillir_l_eau()
+
 
     # Remplir une tasse
     ouvrir_placard()
